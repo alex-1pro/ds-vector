@@ -16,7 +16,6 @@ pipeline {
         stage('Deploy') { 
             steps {
                 echo 'Deploy' 
-                sh 'curl -H "X-JFrog-Art-Api:AKCp8kr1CcVd5rfGm5rwLsdZidDktdUAba8DqG6ikxfuBZEBua7yReY8UkYSEC3PmUKYgF7qt" -T  "https://artifactoyexe.jfrog.io/artifactory/jenkins-project/dslib.a" '
             }
         }
     }
