@@ -1,0 +1,22 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+            	echo 'build'
+                sh 'make lib'
+            }
+        }
+        stage('Clear') { 
+            steps {
+            	echo 'Clear'
+                sh 'make clear'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'Deploy' 
+            }
+        }
+    }
+}
